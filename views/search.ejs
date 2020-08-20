@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NITT API</title>
+    <style media="screen">
+*{
+  text-align : center;
+}
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top : 100px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
+
+      body{
+        background-color : grey;
+      }
+
+      button{
+
+        margin-left: 30px;
+        margin-right : 30px;
+        margin-top : 100px;
+        appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: #50a3a2;
+  border-radius: 3px;
+  width: 200px;
+  font-size: 18px;
+  height : 50px;
+  margin-bottom : 50px;
+      }
+      h3{
+        font-size : 2rem;
+        color : yellow;
+      }
+      h1{
+        font-size : 5rem;
+        color : red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Required Data</h1>
+    <table id="customers">
+      <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Department</th>
+      </tr>
+      <tr>
+        <td><%= rollNo %></td>
+        <td><%= name %></td>
+        <td><%= Department %></td>
+      </tr>
+    </table>
+    <form class="" action="/home" method="post">
+      <button type="submit" name="button">Home</button>
+    </form>
+  </body>
+</html>

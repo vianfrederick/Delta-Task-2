@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NITT API</title>
+    <style media="screen">
+      input{
+        height: 50px;
+        border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: black;
+  width: 500px;
+  border-radius: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: 300;
+  margin-top: 19px;
+  margin-bottom : 37px;
+      }
+      body{
+        background-color : grey;
+      }
+      *{
+        text-align : center;
+      }
+      button{
+        margin-left: 30px;
+        margin-right : 30px;
+        margin-top : 100px;
+        appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: #50a3a2;
+  border-radius: 3px;
+  width: 200px;
+  font-size: 18px;
+  height : 50px;
+  margin-bottom : 50px;
+      }
+      h3{
+        font-size : 2rem;
+        color : yellow;
+      }
+      h1{
+        font-size : 5rem;
+        color : red;
+      }
+      label{
+        font-size : 4rem;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>UPDATE</h1>
+    <form class="" action="/updated" method="post">
+      <label for="updatedName">Name : </label>
+      <input  type="text" name="updatedName" value=<%= name %> required = "true">
+<label for="updatedDepartment">Department : </label>
+      <input  type="text" name="updatedDepartment" value=<%= department %> required = "true">
+<input type="hidden" name="ROLLNO" value=<%= rollNo %>>
+      <button type="submit" name="button">Submit</button>
+    </form>
+
+  </body>
+</html>
